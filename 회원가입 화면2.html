@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lent And Buy</title>
+        <style>
+            * {padding:0; margin:0;}
+            header {border-bottom: solid 7px black; width: 1000px; margin: 0 auto;}
+            nav {border-bottom:dotted 5px rgb(177, 174, 174); width: 1000px; height:50px; 
+                 margin:5px auto; padding:8px 0 0 10px; font-size: 30px; font-weight: bold; color: rgb(68, 68, 68);}
+            section {width:1000px; height: 500px; margin: 70px auto;}
+            footer {border: solid 1px rgb(235, 233, 233); background-color: rgb(235, 233, 233);
+                    width: 1000px; height: 120px; margin: 0 auto;}
+            .clear {clear: both;}
+            a {text-decoration: none; color: inherit;}
+
+            /*  header stylesheet */
+                #logo {width: 225px; margin: 0px auto;}
+                #top_menu {float: right; width: 270px; margin:10px 50px 0 0;}
+                #top_menu li {list-style-type: none; display: inline;}
+                #top_menu p {float: right; margin-right: 55px;}
+                #top_menu form input {vertical-align: middle;}
+
+            /* section stylesheet */
+                section form {margin:120px auto; width: 500px;}
+                #box1 {width: 100px; margin-left: 81px;}
+                #box2 {width: 250px; margin-left: 70px;}
+                #box3 {width: 250px; margin-left: 33px;}
+                #box4 {width: 200px; margin-left: 103px;}
+                #box5 {display: inline; margin-left: 72px;}
+                #box6 {width: 35px; margin-left: 72px; text-align: center;}
+                #box7 {display: inline; border: solid 1px rgb(54, 233, 54); border-radius: 6px;
+                             background-color: rgb(54, 233, 54); margin-left: 10px; font-size: 15px;}
+                #go {margin:80px 0 0 190px; border: solid 1px rgb(175, 175, 175); border-radius: 6px; 
+                             width: 100px; height: 25px; text-align: center; 
+                             background-color: rgb(175, 175, 175); padding-top: 3px;}
+                
+            /* footer stylesheet */ 
+                footer ul {text-align: center; padding: 40px;}
+                footer li {list-style-type: none; display: inline; margin: 10px; font-size: 17px;}      
+        </style>         
+    </head>
+    <body>
+        <header>
+            <div id="top_menu">
+                <ul>
+                    <li><p><a href=로그인화면.html>로그인</a> / <a href="회원가입 화면1.html">회원가입</a></p>
+                        <a href="#"><img src="file/장바구니.png" width="23"></a>
+                        <a href="#"><img src="file/옷장.png" width="23"></a>
+                        <a href="#"><img src="file/찜.PNG" width="25"></a>  
+                    </li>
+                </ul>    
+                <form>
+                    <input type="text" placeholder="검색"><input type="image" src="file/돋보기.PNG" alt="검색" width="22">
+                </form>     
+            </div>
+    
+            <div class="clear"></div>
+    
+            <div id="logo">
+                <a href="index.html"><img src="file/logo.png" width="220"></a>
+            </div>
+    
+        </header>
+        <nav>
+            회원가입
+        </nav>
+        <section>
+            <form>
+                * 회원 ID <input id="box1" type="text" placeholder="id"> @ <select>
+                                                                            <option>--- naver.com ---</option>
+                                                                            <option>--- daum.net ---</option>
+                                                                            <option>--- gmail.com ---</option>
+                                                                           </select><br><br>
+                * 비밀번호 <input id="box2" type="password" placeholder="password"><br><br>
+                * 비밀번호 확인 <input id="box3" type="password" placeholder="password"><br><br>
+                * 이름 <input id="box4" type="text"><br><br>
+                * 생년월일 <div id="box5">
+                            <select><option>선택</option><option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option><option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option></select>&nbsp;&nbsp;
+                            <select><option>선택</option><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option></select>&nbsp;&nbsp;
+                            <select><option>선택</option><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select>
+                           </div><br><br>
+                * 휴대전화 <input id="box6" type="text"> &nbsp; <input type="text" placeholder="'-' 빼고 입력하세요.">
+                          <div id="box7">
+                            <a href="#">본인인증</a>
+                          </div>
+                          <div id="go">
+                            <a href="회원가입 완료 화면.html">가입하기</a>
+                          </div>
+            </form>
+        </section>
+        <footer>
+            <div>
+                <ul>
+                    <li><b>상호</b> LAB</li>
+                    <li><b>대표</b> LAB</li>
+                    <li><b>사업자등록번호</b> 123-45-6789</li>
+                    <li><b>대표전화</b> 010-1111-2222</li><br>
+                    <li><b>주소</b> 천안시 동남구</li>
+                    <li><b>이메일</b> hoseo@naver.com</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

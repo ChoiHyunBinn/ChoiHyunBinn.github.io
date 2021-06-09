@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lent And Buy</title>
+        <style>
+            * {padding:0; margin:0;}
+            header {border-bottom: solid 7px black; width: 1000px; margin: 0 auto;}
+            nav {width: 1000px; margin: 0 auto;}
+            section {width:1000px; margin: 0 auto;}
+            footer {border: solid 1px rgb(235, 233, 233); background-color: rgb(235, 233, 233);
+                    width: 1000px; margin: 0 auto;}
+            .clear {clear: both;}
+            a {text-decoration: none; color: inherit;}
+
+            /*  header stylesheet */
+                #logo {width: 225px; margin: 0px auto;}
+                #top_menu {float: right; width: 270px; margin:10px 50px 0 0;}
+                #top_menu li {list-style-type: none; display: inline;}
+                #top_menu p {float: right; margin-right: 55px;}
+                #top_menu form input {vertical-align: middle;}
+
+            /*  nav stylesheet */
+                #sub1 {font-size: 0; text-align: center; margin-top: 10px;}
+                #sub1 li {display: inline-block; vertical-align: top; width: 160px; text-align: center;
+                          font-size: 20px; font-weight: bold; list-style-type: none;}             
+                #sub2 {list-style-type: none; font-size: 0; text-align: center; margin-top: 5px;}
+                #sub2 li {display: inline-block; width: 190px; height: 30px; font-size: 16px; 
+                          font-weight: bold; text-align: center; background-color: rgba(233, 231, 231, 0.863);
+                          margin-top: 10px; padding-top: 10px;}
+                #line {text-decoration: underline 4px;}
+                #line2 {text-decoration: underline 4px;}
+
+            /* section stylesheet */
+                #list1 {margin: 30px 30px 0 30px;}
+                #list1 img {margin-left: 90px; margin-right: 70px;}
+                #list2 {margin: 0px 100px 0 170px; width: 700px;}
+                #p1 {text-align: center; width: 200px; float: left;}
+                #p2 {text-align: center; width: 200px; margin-right:30px; float: right;}
+                #list3 {margin:30px 30px 0 30px;}
+                #list3 img {margin-left: 90px; margin-right: 75px;}
+                #list4 {margin: 0px 100px 100px 170px; width: 700px;}  
+                #p3 {text-align: center; width: 200px; float: left;}
+                #p4 {text-align: center; width: 200px; margin-right:30px; float: right;}  
+
+            /* footer stylesheet */
+                footer ul {text-align: center; padding: 20px;}
+                footer li {list-style-type: none; display: inline; margin: 10px; font-size: 17px;}           
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="top_menu">
+                <ul>
+                    <li><p><a href=로그인화면.html>로그인</a> / <a href="회원가입 화면1.html">회원가입</a></p>
+                        <a href="#"><img src="file/장바구니.png" width="23"></a>
+                        <a href="#"><img src="file/옷장.png" width="23"></a>
+                        <a href="#"><img src="file/찜.PNG" width="25"></a>  
+                    </li>
+                </ul>    
+                <form>
+                    <input type="text" placeholder="검색"><input type="image" src="file/돋보기.PNG" alt="검색" width="22">
+                </form>     
+            </div>
+    
+            <div class="clear"></div>
+    
+            <div id="logo">
+                <a href="index.html"><img src="file/logo.png" width="220"></a>
+            </div>
+    
+        </header>
+        <nav>
+            <div>
+                <ul id="sub1">
+                    <li id="line"><a href="의류 전체.html">의류</a></li>
+                    <li><a href="#">가방</a></li>
+                    <li><a href="#">악세사리</a></li>
+                    <li><a href="모아보기.html">모아보기</a></li>
+                    <li><a href="#">주문/배송</a></li>
+                    <li><a href="고객센터.html">고객센터</a></li>
+                </ul>
+
+                <ul id="sub2">
+                    <li id="line2"><a href="의류 전체.html">전체</a></li>
+                    <li><a href="의류 상의.html">상의</a></li>
+                    <li><a href="의류 아우터.html">아우터</a></li>
+                    <li><a href="의류 하의.html">하의</a></li>
+                    <li><a href="의류 원피스.html">원피스</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div id="list1">
+                <a href="구매 화면.html"><img src="file/코튼 반팔 티셔츠.jpg" width="300"></a>
+                <a href="구매화면2.html"><img src="file/소프트 베이직 가디건 블랙.jpg" width="280"></a>
+            </div>
+
+            <div id="list2">
+                <p id="p1">코튼 반팔 티셔츠<br><br>B 20,000원 / L 3,000원</p>
+                <p id="p2">소프트 베이직 가디건<br><br>B 40,000원 / L 6,000원</p>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="list3">
+                <a href="구매화면3.html"><img src="file/여름 카고 조거 팬츠.jpg" width="300"></a>
+                <a href="구매화면4.html"><img src="file/2021 여름 플라워 벨티드 롱 원피스.jpg" width="300"></a>
+            </div>
+
+            <div id="list4">
+                <p id="p3">여름 카고 조거 팬츠<br><br>B 50,000원 / L 7,500원</p>
+                <p id="p4">플라워 벨티드 원피스<br><br>B 50,000원 / L 7,500원</p>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <div>
+                <ul>
+                    <li><b>상호</b> LAB</li>
+                    <li><b>대표</b> LAB</li>
+                    <li><b>사업자등록번호</b> 123-45-6789</li>
+                    <li><b>대표전화</b> 010-1111-2222</li><br>
+                    <li><b>주소</b> 천안시 동남구</li>
+                    <li><b>이메일</b> hoseo@naver.com</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,167 +1,162 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset='utf-8'>
-<style>
-* {padding: 0px;
-   margin: 0px;}
-header, nav, section, aside, footer {border:  solid 0px red;}
+    <head>
+        <meta charset="utf-8">
+        <title>Lent And Buy</title>
+        <style>
+            * {padding:0; margin:0;}
+            header {border-bottom: solid 7px black; width: 1000px; margin: 0 auto;}
+            nav {border-bottom: solid 5px gray; width: 1000px; height: 50px; margin: 0 auto;}
+            section {width:1000px; margin: 0 auto;}
+            footer {border: solid 1px rgb(235, 233, 233); background-color: rgb(235, 233, 233);
+                    width: 1000px; margin: 0 auto;}
+            .clear {clear: both;}
+            a {text-decoration: none; color: inherit;}
 
-table {float: right;}
+            /*  header stylesheet */
+                #logo {width: 225px; margin: 0px auto;}
+                #top_menu {float: right; width: 270px; margin:10px 50px 0 0;}
+                #top_menu li {list-style-type: none; display: inline;}
+                #top_menu p {float: right; margin-right: 55px;}
+                #top_menu form input {vertical-align: middle;}
 
-table, th, tr, td {
-	border: solid 1px black;
-	border-collapse: collapse;
-	padding: 8px;
-    background-color: blanchedalmond;}
+            /*  nav stylesheet */
+                #main_menu {text-align: center; font-size: 0;}
+                #main_menu li {list-style-type: none; display: inline-block; vertical-align: top;
+                               font-weight: bold; text-align: center; width: 160px; font-size: 20px;}
+                #main_menu li a {display: block; padding:10px 0;}
+                .sub_menu {display: none; background-color: rgba(207, 204, 212, 0.658);}
+                .sub_menu a {display: block; font-size: 15px; padding: 10px 0;}
+                #main_menu li:hover > .sub_menu {display: block;}
+                #main_menu li:hover > a {text-decoration: underline 3px;}
 
-header {width: 1000px;
-        height: 50px;
-        margin: 50px 0px 0px 40px;}
+            /* top_contents stylesheet */
+                #top_contents {width: 1000px; margin-top: 10px; height: 500px;}
+                #b1 {float: left;}
+                #b2 {float: right;}
 
-h3 {font-size: 30px;}
+            /* middle_contents stylesheet */        
+                #middle_contents {width: 1000px; margin-top: 2px; margin-bottom: 10px;}
+                #middle_contents p {margin-left: 80px; font-size: 30px; font-weight: bold; font-family: "맑은고딕";}
+                #middle_contents li {list-style-type: none; display: inline; margin:0 30px 0 30px;}
+                #middle_contents ul {margin-top: 20px; text-align: center;}   
 
+            /* bottom_contents stylesheet */
+                #bottom_contents {margin-top: 2px;}
 
-nav {width: 1050px;
-	 height: 70px;
+            /* footer stylesheet */
+                footer ul {text-align: center; padding: 20px;}
+                footer li {list-style-type: none; display: inline; margin: 10px; font-size: 17px;}
 
-     margin: 50px 0px 0px 30px;
-     background-color: blanchedalmond;
-     border: solid 1px black;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="top_menu">
+                <ul>
+                    <li><p><a href=로그인화면.html>로그인</a> / <a href="회원가입 화면1.html">회원가입</a></p>
+                        <a href="#"><img src="file/장바구니.png" width="23"></a>
+                        <a href="#"><img src="file/옷장.png" width="23"></a>
+                        <a href="#"><img src="file/찜.PNG" width="25"></a>  
+                    </li>
+                </ul>    
+                <form>
+                    <input type="text" placeholder="검색"><input type="image" src="file/돋보기.PNG" alt="검색" width="22">
+                </form>     
+            </div>
 
-section {width: 800px;
-         height: 70px;
-		 margin-top: 30px;
-		 float: left;
-		 margin-right: 29px;}
+            <div class="clear"></div>
 
-aside {width: 300px;
-       height: 500px; 
-	   margin: 30px;
-       float: left;
-       background-color: blanchedalmond;
-       border: solid 1px black;}
+            <div id="logo">
+                <a href="index.html"><img src="file/logo.png" width="220"></a>
+            </div>
 
-footer {width: 500px;
-        height: 50px;
-		margin-top: 30px;}
+        </header>
+        <nav>
+            <ul id="main_menu">
+                <li>
+                    <a href="의류 전체.html">의류</a>
+                        <ul class="sub_menu">
+                            <li><a href="의류 전체.html">전체</a></li>
+                            <li><a href="의류 상의.html">상의</a></li>
+                            <li><a href="의류 아우터.html">아우터</a></li>
+                            <li><a href="의류 하의.html">하의</a></li>
+                            <li><a href="의류 원피스.html">원피스</a></li>
+                        </ul>
+                </li>
 
-.clear {clear: both;}
+                <li>
+                    <a href="#">가방</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">백팩</a></li>
+                            <li><a href="#">크로스백</a></li>
+                            <li><a href="#">핸드백</a></li>
+                            <li><a href="#">클러치</a></li>
+                        </ul>
+                </li>
 
-ul {
-	list-style-type: none;
-	margin-top: 20px;
-	margin-left: 30px;}
+                <li>
+                    <a href="#">악세사리</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">시계</a></li>
+                            <li><a href="#">팔찌</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">귀걸이</a></li>
+                        </ul>
+                </li>
 
-li {display: inline;}
+                <li><a href="모아보기.html">모아보기</a></li>
 
-</style>
-</head>
-<body>
-<header>
-    <h3>최현빈</h3>
-    <br>
-    <h3>2021-1 시간표</h3>
-</header>
-<nav>
-	<ul>
-        <li><a href="form_test2.html.html">[회원가입]</a></li>   
-        <li><a href="루바토 펜션 안내.html">[루바토 펜션 안내]</a></li>   
-        <li><a href="호서행사안내.html">[호서 행사 안내]</a></li>       
-        <li><a href="야간 개장 과제.html">[호서 야간 개장]</a></li>   
-        <li><a href="봄맞이세일.html">[세일 안내장]</a></li> 
-        <li><a href="월간 일정표.html">[월간 일정표]</a></li>    
-        <li><a href="쇼핑몰 판매 목록1.html">[쇼핑몰 판매 목록]</a></li>
-        <li><a href="ex_photo-academy.html">[포토 아카데미]</a></li>
-	</ul>
-</nav>
-<section>
-	<table>
-        <tr>
-            <td></td>
-            <td>월요일</td>
-            <td>화요일</td>
-            <td>수요일</td>
-            <td>목요일</td>
-            <td>금요일</td>
-        </tr>
-        <tr>
-            <td>1교시<br>9:30~10:20</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>웹프로그래밍</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>2교시<br>10:30~11:20</td>
-            <td rowspan="2">웹프로그래밍</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="3">경영정보시스템</td>
-        </tr>
-        <tr>
-            <td>3교시<br>11:30~12:20</td>
-            <td></td>
-            <td rowspan="2">대학영어회화2</td>
-            <td rowspan="2">알기쉬운<br>인간의이해</td>
-        </tr>
-        <tr>
-            <td>4교시<br>12:30~13:20</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>5교시<br>13:30~14:20</td>
-            <td></td>
-            <td rowspan="3">경영통계</td>
-            <td></td>
-            <td></td>
-            <td>채플</td>
-        </tr>
-        <tr>
-            <td>6교시<br>14:30~15:20</td>
-            <td></td>
-            <td></td>
-            <td rowspan="2">디지털콘텐츠<br>비즈니스개론<br>(창업)</td>
-            <td></td>
-            <tr>
-                <td>7교시<br>15:30~16:20</td>
-                <td></td>
-                <td></td>
-                <td>자기이해와개발</td>
-            </tr>
-            <tr>
-                <td>8교시<br>16:30~17:20</td>
-                <td></td><td rowspan="2">디지털콘텐츠<br>비즈니스개론<br>(창업)</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tr>
-    </table>
-</section>
-<aside>
-        <p>웹프로그래밍<br>(월 2~3교시), (목 1교시)</p>
-        <br>
-		<p>경영통계<br>(화 5~7교시)</p>
-        <br>
-        <p>디지털콘텐츠 비즈니스개론<br>(화 8교시), (목 6~7교시)</p>
-        <br>
-        <p>대학영어회화<br>(수 3~4교시)</p>
-        <br>
-        <p>알기 쉬운 인간의 이해<br>(목 3~4교시)</p>
-        <br>
-        <p>경영정보시스템<br>(금 2~4교시)</p>
-        <br>
-        <p>채플<br>(금 5교시)</p>
-        <br>
-        <lp>자기이해와개발<br>(금 7교시)</p>
-</aside>
-<div class='clear'></div>
-<footer>
-    <a href="http://www.hoseo.ac.kr/intro.jsp"><img src="호서대.jpg" width="200"></a>
-</footer>
-</body>
+                <li><a href="#">주문/배송</a></li>
+
+                <li>
+                    <a href="#">고객센터</a>
+                        <ul class="sub_menu">
+                            <li><a href="소개.html">Introduce</a></li>
+                            <li><a href="고객센터.html">자주 물어보는 질문</a></li>
+                        </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <section>
+            <div id="top_contents">
+                <a href="의류 전체.html"><img id="b1" src="file/배너.jpg" width="660"></a>
+                <a href="의류 원피스.html"><img id="b2" src="file/배너2.PNG" width="340" height="500"></a>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="middle_contents">
+                <p>이럴 땐, 이런룩</p>
+                <ul>
+                    <li><a href="의류 전체.html"><img src="file/데일리.png" width="100"></a></li>
+                    <li><a href="의류 원피스.html"><img src="file/로맨틱.png" width="100"></a></li>
+                    <li><a href="의류 전체.html"><img src="file/오피스.png" width="100"></a></li>
+                    <li><a href="의류 원피스.html"><img src="file/주말.png" width="100"></a></li>
+                    <li><a href="의류 전체.html"><img src="file/파티.png" width="100"></a></li>
+                </ul>
+            </div>
+
+            <div id="bottom_contents">
+                <a href="소개.html"><img src="file/렌탈.jpg" width="1000" height="450"></a>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <div>
+                <ul>
+                    <li><b>상호</b> LAB</li>
+                    <li><b>대표</b> LAB</li>
+                    <li><b>사업자등록번호</b> 123-45-6789</li>
+                    <li><b>대표전화</b> 010-1111-2222</li><br>
+                    <li><b>주소</b> 천안시 동남구</li>
+                    <li><b>이메일</b> hoseo@naver.com</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>

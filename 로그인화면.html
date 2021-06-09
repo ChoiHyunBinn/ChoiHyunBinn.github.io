@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lent And Buy</title>
+        <style>
+            * {padding:0; margin:0;}
+            header {border-bottom: solid 7px black; width: 1000px; margin: 0 auto;}
+            nav {border-bottom:dotted 5px rgb(177, 174, 174); width: 1000px; height:50px; 
+                 margin:5px auto; padding:8px 0 0 10px; font-size: 30px; font-weight: bold; color: rgb(68, 68, 68);}
+            section {border: solid 2px black; width:850px; height: 550px; margin: 70px auto; }
+            footer {border: solid 1px rgb(235, 233, 233); background-color: rgb(235, 233, 233);
+                    width: 1000px; margin: 0 auto;}
+            .clear {clear: both;}
+            a {text-decoration: none; color: inherit;}
+
+            /*  header stylesheet */
+                #logo {width: 225px; margin: 0px auto;}
+                #top_menu {float: right; width: 270px; margin:10px 50px 0 0;}
+                #top_menu li {list-style-type: none; display: inline;}
+                #top_menu p {float: right; margin-right: 55px;}
+                #top_menu form input {vertical-align: middle;}
+            
+            /* section stylesheet */
+                #ID {width: 390px; height: 40px; padding-left: 35px; padding-top:15px;}
+                #ID input {width: 250px; height: 20px;}
+                #PASS {width: 380px; height: 40px; padding-top:5px; padding-left: 20px;}
+                #PASS input {width: 250px; height: 20px;}
+                section form {margin-top: 40px; margin-left: 210px;}
+                #login {border: solid 1px rgb(175, 175, 175); border-radius: 8px; background-color: rgb(175, 175, 175);
+                        width: 200px; height: 25px; text-align: center; margin-top: 10px; margin-left: 330px;}
+                hr {margin-left: 235px;}
+                #login2 {margin-top: 15px; margin-left: 280px;}
+                #or {margin-left: 420px;}
+                #login3 {width: 280px; height: 100px; text-align: center; margin-left: 290px; margin-top: 10px;}
+                #bm {margin-top: 10px; margin-left: 285px;}
+
+            /* footer stylesheet */
+                footer ul {list-style-type: none; padding:20px 0; text-align: center; margin-top: 10px; font-size: 17px;}        
+                footer ul li {display: inline; margin:5px;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="top_menu">
+                <ul>
+                    <li><p><a href=로그인화면.html>로그인</a> / <a href="회원가입 화면1.html">회원가입</a></p>
+                        <a href="#"><img src="file/장바구니.png" width="23"></a>
+                        <a href="#"><img src="file/옷장.png" width="23"></a>
+                        <a href="#"><img src="file/찜.PNG" width="25"></a>  
+                    </li>
+                </ul>    
+                <form>
+                    <input type="text" placeholder="검색"><input type="image" src="file/돋보기.PNG" alt="검색" width="22">
+                </form>     
+            </div>
+    
+            <div class="clear"></div>
+    
+            <div id="logo">
+                <a href="index.html"><img src="file/logo.png" width="220"></a>
+            </div>
+    
+        </header>
+        <section>
+            <form>
+                <div id="ID">
+                    아이디 : <input type="text" placeholder="ID">
+                </div>
+
+                <div id="PASS">
+                    비밀번호 : <input type="password" placeholder="PASSWORD">
+                </div>
+            </form>
+
+            <div id="login">
+                <a href="index.html">Login</a>
+            </div><br>
+
+            <hr width="400">
+
+            <div id="login2">
+                <a href="index.html"><img src="file/카카오 로그인.PNG"></a>
+                <br>
+                <a href="index.html"><img src="file/애플 로그인.PNG"></a>
+            </div>
+
+            <p id="or">or</p>
+
+            <div id="login3">
+                <a href="index.html"><img src="file/페이스북 로그인.PNG"></a>
+                <a href="index.html"><img src="file/네이버 로그인.PNG"></a>
+                <a href="index.html"><img src="file/이메일 로그인.PNG"></a>
+            </div>
+
+            <p id="bm"><a href="#">아이디 찾기</a> /
+                <a href="#">비밀번호 찾기</a> /
+                <a href="회원가입 화면1.html">회원가입</a>
+            </p>
+        </section>
+
+        <div class="clear"></div>
+
+        <footer>
+            <div>
+                <ul>
+                    <li><b>상호</b> LAB</li>
+                    <li><b>대표</b> LAB</li>
+                    <li><b>사업자등록번호</b> 123-45-6789</li>
+                    <li><b>대표전화</b> 010-1111-2222</li><br>
+                    <li><b>주소</b> 천안시 동남구</li>
+                    <li><b>이메일</b> hoseo@naver.com</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

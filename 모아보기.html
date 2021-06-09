@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lent And Buy</title>
+        <style>
+            * {padding:0; margin:0;}
+            header {border-bottom: solid 7px black; width: 1000px; margin: 0 auto;}
+            nav {width: 1000px; margin: 0 auto;}
+            section {width:1000px; margin: 10px auto;}
+            footer {border: solid 1px rgb(235, 233, 233); background-color: rgb(235, 233, 233);
+                    width: 1000px; margin: 0px auto;}
+            .clear {clear: both;}
+            a {text-decoration: none; color: inherit;}
+
+            /*  header stylesheet */
+                #logo {width: 225px; margin: 0px auto;}
+                #top_menu {float: right; width: 270px; margin:10px 50px 0 0;}
+                #top_menu li {list-style-type: none; display: inline;}
+                #top_menu p {float: right; margin-right: 55px;}
+                #top_menu form input {vertical-align: middle;}
+
+            /*  nav stylesheet */
+                #menu {font-size: 0; text-align: center; margin-top: 10px;}
+                #menu li {display: inline-block; vertical-align: top; width: 160px; text-align: center;
+                          font-size: 20px; font-weight: bold; list-style-type: none;}
+                #line {text-decoration: underline 4px;}
+                #top {margin-top: 20px;}
+                nav form input {vertical-align: middle;}
+                #search {padding: 0 200px 0 10px; height: 30px; line-height: 30px; font-size:18px ;}
+                #top2 {border: solid 1px black; width: 350px; margin-top: 10px; font-size: 18px;}
+                #menu2 li {display: inline-block; list-style-type: none; margin: 0 5px 0 5px;}
+
+            /* section stylesheet */
+                section div {width: 1000px; margin-bottom: 30px;}
+                section img {margin-left: 50px;}
+                .list {float: right; margin: 55px 0px 0 0px; width: 480px;}
+                .list li {list-style-type: none; line-height: 150%;}
+                span {color: red;}
+                .Buy {border: solid 1px rgb(175, 175, 175); border-radius: 6px; background-color: rgb(175, 175, 175);
+                      width: 100px; height: 25px; text-align: center; margin-top: 10px; float: left;}
+                .Lent {border: solid 1px rgb(175, 175, 175); border-radius: 6px; background-color: rgb(175, 175, 175);
+                      width: 100px; height: 25px; text-align: center; margin: 10px 250px 0 0px; float: right;}
+                .img {float: right; width: 50px; margin: 90px 50px 0 50px;}    
+
+            /* footer stylesheet */
+                footer ul {text-align: center; padding: 20px;}
+                footer li {list-style-type: none; display: inline; margin: 10px; font-size: 17px;}  
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="top_menu">
+                <ul>
+                    <li><p><a href=로그인화면.html>로그인</a> / <a href="회원가입 화면1.html">회원가입</a></p>
+                        <a href="#"><img src="file/장바구니.png" width="23"></a>
+                        <a href="#"><img src="file/옷장.png" width="23"></a>
+                        <a href="#"><img src="file/찜.PNG" width="25"></a>  
+                    </li>
+                </ul>    
+                <form>
+                    <input type="text" placeholder="검색"><input type="image" src="file/돋보기.PNG" alt="검색" width="22">
+                </form>     
+            </div>
+    
+            <div class="clear"></div>
+    
+            <div id="logo">
+                <a href="index.html"><img src="file/logo.png" width="220"></a>
+            </div>
+    
+        </header>
+        <nav>
+            <ul id="menu">
+                <li><a href="의류 전체.html">의류</a></li>
+                <li><a href="#">가방</a></li>
+                <li><a href="#">악세사리</a></li>
+                <li id="line"><a href="모아보기.html">모아보기</a></li>
+                <li><a href="#">주문/배송</a></li>
+                <li><a href="고객센터.html">고객센터</a></li>
+            </ul>
+            <div id="top">
+                <form>
+                    <input id="search" type="text" placeholder="반바지"><input type="image" src="file/돋보기.PNG" alt="검색" width="35">
+                </form>
+            </div>
+            <div id="top2">
+                <ul id="menu2">
+                    <li><b>필터</b> :</li>
+                    <li><a href="#">평점순</a></li>
+                    <li><a href="#">인기순</a></li>
+                    <li><a href="#">저가순</a></li>
+                    <li><a href="#">고가순</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div>
+                <img src="file/린넨 이지 쇼츠.jpg" width="200">
+
+                <a href="#"><img class="img" src="file/장바구니.png" width="30"></a>
+
+                <div class="list">
+                    <ul>
+                        <li>아노블리어 (ANOBLIR)</li>
+                        <li>린넨 이지 쇼츠</li>
+                        <li>B <span>35,000원</span></li>
+                        <li>L &nbsp;&nbsp;<span>5,000원</span></li>
+                    </ul>
+
+                    <div class="Buy">
+                        <a href="#">Buy</a>
+                    </div>
+
+                    <div class="Lent">
+                        <a href="구매 화면.html">Lent</a> 
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="file/코스모 밴딩 숏팬츠.jpg" width="200">
+
+                <a href="#"><img class="img" src="file/장바구니.png" width="30"></a>
+
+                <div class="list">
+                    <ul>
+                        <li>제멋 (JEMUT)</li>
+                        <li>코스모 밴딩 숏팬츠</li>
+                        <li>B <span>30,000원</span></li>
+                        <li>L &nbsp;&nbsp;<span>4,500원</span></li>
+                    </ul>
+
+                    <div class="Buy">
+                        <a href="#">Buy</a>
+                    </div>
+
+                    <div class="Lent">
+                        <a href="구매 화면.html">Lent</a> 
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="file/나이키 반바지 블랙.jpg" width="200">
+
+                <a href="#"><img class="img" src="file/장바구니.png" width="30"></a>
+
+                <div class="list">
+                    <ul>
+                        <li>나이키 (NIKE)</li>
+                        <li>나이키 반바지 블랙</li>
+                        <li>B <span>40,000원</span></li>
+                        <li>L &nbsp;&nbsp;<span>6,000원</span></li>
+                    </ul>
+
+                    <div class="Buy">
+                        <a href="#">Buy</a>
+                    </div>
+
+                    <div class="Lent">
+                        <a href="구매 화면.html">Lent</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <div>
+                <ul>
+                    <li><b>상호</b> LAB</li>
+                    <li><b>대표</b> LAB</li>
+                    <li><b>사업자등록번호</b> 123-45-6789</li>
+                    <li><b>대표전화</b> 010-1111-2222</li><br>
+                    <li><b>주소</b> 천안시 동남구</li>
+                    <li><b>이메일</b> hoseo@naver.com</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
